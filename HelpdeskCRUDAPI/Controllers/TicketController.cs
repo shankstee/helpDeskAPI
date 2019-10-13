@@ -40,7 +40,7 @@ namespace AspCoreCRUD.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateTicket([FromRoute] int id, [FromBody] User objTicket)
+        public async Task<IActionResult> UpdateTicket([FromRoute] int id, [FromBody] Ticket objTicket)
         {
             if (objTicket == null || id != objTicket.id)
             {
@@ -48,7 +48,7 @@ namespace AspCoreCRUD.Controllers
             }
             else
             {
-                _db.Users.Update(objTicket);
+                _db.Ticket.Update(objTicket);
                 await _db.SaveChangesAsync();
                 return new JsonResult("Ticket Was Updated Successfully");
             }
