@@ -8,8 +8,8 @@ namespace HelpdeskCRUDAPI.Models
             get;
             set;
         }
-        public string subject   
-            {
+        public string subject
+        {
 
             get;
             set;
@@ -28,6 +28,14 @@ namespace HelpdeskCRUDAPI.Models
 
         }
         public string comment
+        {
+
+            get;
+            set;
+
+        }
+
+        public int userId
         {
 
             get;

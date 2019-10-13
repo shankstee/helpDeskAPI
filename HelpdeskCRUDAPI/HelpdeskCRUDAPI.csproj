@@ -19,4 +19,21 @@
     </PackageReference>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Migrations\20191013014842_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191013014842_InitialCreate.cs" />
+    <Compile Remove="Migrations\ApplicationDBContextModelSnapshot.cs" />
+    <Compile Remove="Migrations\20191013060715_AddTicketTable3.cs" />
+    <Compile Remove="Migrations\20191013060715_AddTicketTable3.Designer.cs" />
+    <Compile Remove="Migrations\20191013061036_AddTicketTable2.0.cs" />
+    <Compile Remove="Migrations\20191013060701_AddTicketTable2.Designer.cs" />
+    <Compile Remove="Migrations\20191013051600_AddTicketTable.cs" />
+    <Compile Remove="Migrations\20191013051600_AddTicketTable.Designer.cs" />
+    <Compile Remove="Migrations\20191013060701_AddTicketTable2.cs" />
+    <Compile Remove="Migrations\20191013062833_Initial.cs" />
+    <Compile Remove="Migrations\20191013062833_Initial.Designer.cs" />
+    <Compile Remove="Migrations\ApplicationDbContextModelSnapshot.cs" />
+    <Compile Remove="Migrations\20191013063639_InitialTicketAndUser.cs" />
+    <Compile Remove="Migrations\20191013063639_InitialTicketAndUser.Designer.cs" />
+  </ItemGroup>
 </Project>

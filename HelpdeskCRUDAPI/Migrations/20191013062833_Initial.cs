@@ -2,7 +2,7 @@
 
 namespace HelpdeskCRUDAPI.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,9 +12,9 @@ namespace HelpdeskCRUDAPI.Migrations
                 {
                     id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    firstName = table.Column<string>(nullable: true),
-                    lastName = table.Column<string>(nullable: true),
-                    phoneNumber = table.Column<string>(nullable: true)
+                    email = table.Column<string>(nullable: true),
+                    password = table.Column<string>(nullable: true),
+                    accountType = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {

@@ -11,5 +11,6 @@ namespace HelpdeskCRUDAPI.Data
 
         }
         public DbSet<User> Users { get; set; }
+        public DbSet<Ticket> Ticket { get; set; }
     }
 }

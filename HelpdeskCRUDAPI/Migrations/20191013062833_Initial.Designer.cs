@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HelpdeskCRUDAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20191013014842_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20191013062833_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -27,13 +27,13 @@ namespace HelpdeskCRUDAPI.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("firstName")
+                    b.Property<bool>("accountType")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("email")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("lastName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("phoneNumber")
+                    b.Property<string>("password")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("id");

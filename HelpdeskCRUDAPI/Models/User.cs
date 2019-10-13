@@ -20,7 +20,7 @@ namespace HelpdeskCRUDAPI.Models
             get;
             set;
         }
-        public Boolean accountType
+        public bool accountType
         {
 
             get;
