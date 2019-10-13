@@ -55,16 +55,16 @@ namespace AspCoreCRUD.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteEmployee([FromRoute] int id)
+        public async Task<IActionResult> DeleteUser([FromRoute] int id)
         {
-            var findEmployee = await _db.Users.FindAsync(id);
-            if (findEmployee == null)
+            var findUser = await _db.Users.FindAsync(id);
+            if (findUser == null)
             {
                 return NotFound();
             }
             else
             {
-                _db.Users.Remove(findEmployee);
+                _db.Users.Remove(findUser);
                 await _db.SaveChangesAsync();
                 return new JsonResult("Employee Was Deleted Successfully");
             }

@@ -1,22 +1,23 @@
 ﻿<Properties StartupConfiguration="{8633C2F0-DC38-4E52-8646-A8CE7CAB9397}|Default">
   <MonoDevelop.Ide.ItemProperties.HelpdeskCRUDAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Migrations/20191013063805_InitialTicketAndUserToo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/UserController.cs">
     <Files>
       <File FileName="Models/User.cs" Line="17" Column="10" />
       <File FileName="Data/ApplicationDBContext.cs" Line="17" Column="1" />
       <File FileName="Models/EmptyClass.cs" Line="46" Column="16" />
-      <File FileName="Migrations/20191013063805_InitialTicketAndUserToo.cs" Line="1" Column="1" />
+      <File FileName="Controllers/TicketController.cs" Line="65" Column="17" />
+      <File FileName="Controllers/UserController.cs" Line="58" Column="51" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HelpdeskCRUDAPI" expanded="True">
             <Node name="HelpdeskCRUDAPI" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True" />
-              <Node name="Migrations" expanded="True">
-                <Node name="20191013063805_InitialTicketAndUserToo.cs" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="UserController.cs" selected="True" />
               </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True" />
               <Node name="Models" expanded="True" />
             </Node>
           </Node>
