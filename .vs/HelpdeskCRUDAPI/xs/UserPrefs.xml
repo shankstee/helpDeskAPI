@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{2D380DFD-A0D1-4F06-9E44-1CB5A0AB1947}|Default">
+  <MonoDevelop.Ide.ItemProperties.HelpdeskCRUDAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelpdeskCRUDAPI/Migrations/ApplicationDBContextModelSnapshot.cs">
+    <Files>
+      <File FileName="HelpdeskCRUDAPI/Controllers/UserController.cs" Line="73" Column="2" />
+      <File FileName="HelpdeskCRUDAPI/appsettings.json" Line="15" Column="1" />
+      <File FileName="HelpdeskCRUDAPI/Program.cs" Line="27" Column="1" />
+      <File FileName="HelpdeskCRUDAPI/Startup.cs" Line="55" Column="1" />
+      <File FileName="HelpdeskCRUDAPI/Migrations/20191013014842_InitialCreate.Designer.cs" Line="47" Column="1" />
+      <File FileName="HelpdeskCRUDAPI/Migrations/ApplicationDBContextModelSnapshot.cs" Line="45" Column="1" />
+      <File FileName="HelpdeskCRUDAPI/Migrations/20191013014842_InitialCreate.cs" Line="32" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HelpdeskCRUDAPI" expanded="True">
+            <Node name="HelpdeskCRUDAPI" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Migrations" expanded="True">
+                <Node name="ApplicationDBContextModelSnapshot.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using HelpdeskCRUDAPI.Data;
 using HelpdeskCRUDAPI.Models;
@@ -25,7 +26,13 @@ namespace AspCoreCRUD.Controllers
             return Ok(_db.Ticket.ToList());
         }
 
-        [HttpPost]
+        [HttpGet("{id}")]
+        public IActionResult GetTickets([FromRoute] int userId)
+    {
+        return Ok(_db.Users.ToList());
+    }
+
+    [HttpPost]
         public async Task<IActionResult> AddTicket([FromBody] Ticket objTicket)
         {
             if (!ModelState.IsValid)
@@ -42,9 +49,10 @@ namespace AspCoreCRUD.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateTicket([FromRoute] int id, [FromBody] Ticket objTicket)
         {
+            Console.Write("Enter your name: " + objTicket);
             if (objTicket == null || id != objTicket.id)
             {
-                return new JsonResult("User Was Not Found");
+                return new JsonResult(" Unable to update");
             }
             else
             {

@@ -25,6 +25,7 @@ namespace AspCoreCRUD.Controllers
             return Ok(_db.Users.ToList());
         }
 
+
         [HttpPost]
         public async Task<IActionResult> AddUser([FromBody] User objUser)
         {

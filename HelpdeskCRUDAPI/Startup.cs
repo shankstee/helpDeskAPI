@@ -29,7 +29,7 @@ namespace HelpdeskCRUDAPI
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            services.AddCors(o => o.AddPolicy("Allow-Cors-Policy", builder =>
             {
                 builder.AllowAnyOrigin()
                     .AllowAnyMethod()
@@ -48,7 +48,7 @@ namespace HelpdeskCRUDAPI
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseCors("MyPolicy");
+            app.UseCors("Allow-Cors-Policy");
             app.UseHttpsRedirection();
 
             app.UseRouting();
